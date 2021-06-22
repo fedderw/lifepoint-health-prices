@@ -5,18 +5,8 @@ import pandas as pd
 import numpy as np
 import json
 import csv
-
-# import glob
-# import requests
-import seaborn as sns
-
-# import matplotlib as plt
 import urllib.request, json
 from collections import OrderedDict, defaultdict
-
-# from doltpy.cli import Dolt
-# from doltpy.cli.read import read_pandas, read_pandas_sql
-
 from pandas_read_xml import flatten, fully_flatten, auto_separate_tables
 import pandas_read_xml as pdx
 
@@ -81,6 +71,7 @@ for npi_number, raw_xml in xmls.items():
     }
 
     # TODO maybe we've done this wrong?
+    # select only CPT/HCPCS codes
     df = df[df["patient_charge_type"] == "HCPCS"]
     df = df.dropna(subset=["patient_charge_item_code"])
 
@@ -118,7 +109,10 @@ for npi_number, raw_xml in xmls.items():
     # rename columns
     df.rename(columns=COLSDICT, inplace=True)
 
-    # increment goes before everything else
+    # due to primary key constaints in the dolt db, we need to add ',1' then ',2' etc.
+    # for any duplicate procedure/description combinations. hospitals will often
+    # use different description for procedures in different circumstances that still use the same'
+    # category I/II cpt code
     incremented = df["code"].copy()
 
     counter = defaultdict(int)
@@ -128,13 +122,13 @@ for npi_number, raw_xml in xmls.items():
             pre = v
             post = str("," + str(counter[v] - 1))
             incremented[k] = "%s%s" % (pre, post)
+
     # replace code column with new incremented version
     df["code"] = incremented
 
-    # print("\n before procedures")
-    # print(df.head(1))
+    # ----------------------------- procedures table ----------------------------- #
 
-    # create procedures table
+    # create procedures df to create csv which will map to procedures table in DB
     procedures = df[["code", "npi_number", "long_description"]].copy()
     procedures["short_description"] = np.nan
 
@@ -149,11 +143,7 @@ for npi_number, raw_xml in xmls.items():
     new_filename = "procedures\\" + lower_name + "_" + str(npi_number) + ".csv"
     procedures.to_csv(new_filename, index=False)
 
-    # print("\n procedures")
-    # print(procedures.head(1))
-
-    print("DEBUG")
-    # CHARGES
+    # --------------------------- de-identified charges -------------------------- #
     # select only payer-non specific charge info
     CHARGE_COLS = [
         "npi_number",
@@ -164,13 +154,11 @@ for npi_number, raw_xml in xmls.items():
         "max",
         "min",
     ]
-    # create df to convert deidentified stuff to prices table
+    # create df to convert deidentified charges to prices table
     charges = df[CHARGE_COLS].copy()
-    # print("DEBUG 2")
     # rename columns
     charges.rename(columns=COLSDICT, inplace=True)
 
-    # print("DEBUG 3")
     # melt charges
     def clean_melted_charges(dataframe):
         """used specifically to conver the metled non-payer specific charges to match prices schema"""
@@ -220,23 +208,18 @@ for npi_number, raw_xml in xmls.items():
             ]
         ]
 
-    # print("DEBUG 4")
-    # call function
     new_charges = clean_melted_charges(charges)
-    # print("DEBUG 5")
-    # print("\n new charges")
-    # print(new_charges.head(1))
 
-    # END CHARGES
+    # ------------------------ clean data for prices table ----------------------- #
     # # flatten the xml tree structure to get payer and charge out to each row
     for i in range(4):
         # print(df.columns)
         df = df.pipe(flatten)
+
+    # clean newly flattened columns
     df = col_clean(df)
     # rename columns
     df.rename(columns=COLSDICT, inplace=True)
-    # print("\n df columns before df price")
-    # print(df.head(1))
 
     # remove commas from prices and make numeric
     df["price"] = df["price"].replace({",": ""}, regex=False).apply(pd.to_numeric, 1)
@@ -274,9 +257,8 @@ for npi_number, raw_xml in xmls.items():
     # create prices csv
     new_filename = "prices\\" + lower_name + "_" + str(npi_number) + ".csv"
     prices.to_csv(new_filename, index=False)
-    total_prices += len(prices)
 
-    # create payers csv
+    # create csv for unique payers to upload as PK of `payers` table, which is FK of `prices`
     new_filename = "payers\\" + lower_name + "_" + str(npi_number) + ".csv"
     payers = pd.DataFrame(prices.payer.unique())
     payers.columns = ["payer"]
