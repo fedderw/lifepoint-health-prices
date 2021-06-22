@@ -1,0 +1,81 @@
+,provider,npi,zip_code,street_address,city,county,state,acute_care_facility,hospital_type,compliance_score
+158051,Andalusia Regional Hospital,1821078494,36420,849 South Three Notch Street,Andalusia,Covington,AL,True,Acute Care Hospitals,5.0
+158826,Athens Regional Medical Center,1669567319,37303,1114 West Madison Avenue,Athens,McMinn,TN,True,Acute Care Hospitals,5.0
+160111,Bell Hospital,,49849,901 Lakeshore Drive,Ishpeming,Marquette,MI,True,Critical Access Hospitals,5.0
+163049,Bluegrass Community Hospital,,40383,360 Amsden Avenue,Versailles,Woodford,KY,True,Critical Access Hospitals,5.0
+164359,Bolivar Medical Center,1457321036,38732,901 East Sunflower Road,Cleveland,Bolivar,MS,True,Acute Care Hospitals,5.0
+165629,Bourbon Community Hospital,1427132158,40361,9 Linville Drive,Paris,Bourbon,KY,True,Acute Care Hospitals,5.0
+166862,Canyon Vista Medical Center,1194766543,85635,5700 East Highway 90,Sierra Vista,Cochise,AZ,True,Acute Care Hospitals,5.0
+166932,Capital Medical Center,1841258639,98502,3900 Capital Mall Drive Sw,Olympia,Thurston,WA,True,Acute Care Hospitals,5.0
+166995,Carolina Pines Regional Medical Cent,1174500458,29550,1304 West Bobo Newsom Highway,Hartsville,Darlington,SC,True,Acute Care Hospitals,5.0
+167057,Castleview Hospital,1417064205,84501,300 North Hospital Drive,Price,Carbon,UT,True,Acute Care Hospitals,5.0
+168737,Central Carolina Hospital,1902836943,27330,1135 Carthage Street,Sanford,Lee,NC,True,Acute Care Hospitals,5.0
+168796,Clark Memorial Hospital,1134186315,47130,1220 Missouri Avenue,Jeffersonville,Clark,IN,True,Acute Care Hospitals,5.0
+168879,Clark Regional Medical Center,1811213994,40391,175 Hospital Drive,Winchester,Clark,KY,True,Acute Care Hospitals,5.0
+171008,Clinch Valley Medical Center,1871534297,24641,6801 Governor G C Peery Highway,Richlands,Tazewell,VA,True,Acute Care Hospitals,5.0
+172131,Clinton Memorial Hospital,1063713659,45177,610 West Main Street,Wilmington,Clinton,OH,True,Acute Care Hospitals,5.0
+172317,Colorado Plains Medical Center,1477638971,80701,1000 Lincoln Street,Fort Morgan,Morgan,CO,True,Acute Care Hospitals,5.0
+173291,Conemaugh Memorial Medical Center,1801897038,15905,1086 Franklin Street,Johnstown,Cambria,PA,True,Acute Care Hospitals,5.0
+174219,Conemaugh Memorial Medical Center Lee Campus,,15901,320 Main St,Johnstown,Cambria,PA,True,,5.0
+175147,Conemaugh Miners Medical Center,1184620486,16646,290 Haida Avenue,Hastings,Cambria,PA,True,Acute Care Hospitals,5.0
+175571,Crockett Hospital,1114003175,38464,1607 South Locust Avenue,Lawrenceburg,Lawrence,TN,True,Acute Care Hospitals,5.0
+176259,Ennis Regional Medical Center,1700805678,75119,2201 West Lampasas Street,Ennis,Ellis,TX,True,Acute Care Hospitals,5.0
+176648,Fauquier Health,1912334517,20186,500 Hospital Drive,Warrenton,Fauquier,VA,True,Acute Care Hospitals,5.0
+177192,Fleming County Hospital,1881726347,41041,55 Foundation Drive,Flemingsburg,Fleming,KY,True,,5.0
+177723,Frye Regional Medical Center,1801823349,28601,420 North Center Street,Hickory,Catawba,NC,True,Acute Care Hospitals,5.0
+177813,Georgetown Community Hospital,1326107319,40324,1140 Lexington Road,Georgetown,Scott,KY,True,Acute Care Hospitals,5.0
+179037,Harris Regional Hospital,1407962046,28779,68 Hospital Road,Sylva,Jackson,NC,True,Acute Care Hospitals,5.0
+184656,Havasu Regional Medical Center,1780761866,86403,101 Civic Center Lane,Lake Havasu City,Mohave,AZ,True,Acute Care Hospitals,5.0
+185334,Jackson Purchase Medical Center,1891892741,42066,1099 Medical Center Circle,Mayfield,Graves,KY,True,Acute Care Hospitals,5.0
+186864,Lake Cumberland Regional Hosp,1619038247,42503,305 Langdon Street,Somerset,Pulaski,KY,True,Acute Care Hospitals,5.0
+189321,Livingston Regional Hospital,1396760542,38570,315 Oak Street,Livingston,Overton,TN,True,Acute Care Hospitals,5.0
+190891,Logan Memorial Hospital,1992893416,42276,1625 South Nashville Road,Russellville,Logan,KY,True,Acute Care Hospitals,5.0
+191638,Logan Regional Medical Center,1750332565,25601,20 Hospital Drive,Logan,Logan,WV,True,Acute Care Hospitals,5.0
+192370,Los Alamos Medical Center,1285701623,87544,3917 West Road,Los Alamos,Los Alamos,NM,True,Acute Care Hospitals,5.0
+192858,Lourdes Counseling Center,1548342181,99354,1175 Carondelet Drive,Richland,Benton,WA,False,Psychiatric,5.0
+192917,Lourdes Medical Center,,99301,520 North Fourth Avenue,Pasco,Franklin,WA,True,Critical Access Hospitals,5.0
+192976,Maria Parham Medical Center,1164707725,27536,566 Ruin Creek Road,Henderson,Vance,NC,True,Acute Care Hospitals,5.0
+194312,Meadowview Regional Medical Center,1881785863,41056,989 Medical Park Drive,Maysville,Mason,KY,True,Acute Care Hospitals,5.0
+195609,Memorial Hospital of Martinsville,1386720183,24112,320 Hospital Drive,Martinsville,Martinsville,VA,True,,5.0
+196697,Memorial Medical Center,1700821808,88011,2450 South Telshor Boulevard,Las Cruces,Doña Ana,NM,True,Acute Care Hospitals,5.0
+197030,Meyersdale Community Hospital,,15552,200 Hospital Drive,Meyersdale,Somerset,PA,True,Critical Access Hospitals,5.0
+197834,Nason Hospital,1497708473,16673,105 Nason Drive,Roaring Spring,Blair,PA,True,Acute Care Hospitals,5.0
+198489,National Park Medical Center,1841241833,71901,1910 Malvern Avenue,Hot Springs,Garland,AR,True,Acute Care Hospitals,5.0
+198552,North Alabama Medical Center,1477874337,35630,205 Marengo Street,Florence,Lauderdale,AL,True,Acute Care Hospitals,5.0
+198580,North Alabama Shoals Hospital,1699096552,35661,201 Avalon Avenue,Muscle Shoals,Colbert,AL,True,Acute Care Hospitals,5.0
+198608,Northeastern Nevada Regional Hospita,1770674350,89801,2001 Errecart Boulevard,Elko,Elko,NV,True,Acute Care Hospitals,5.0
+199488,Ottumwa Regional Health Center,1013233741,52501,1001 Pennsylvania Avenue,Ottumwa,Wapello,IA,True,Acute Care Hospitals,5.0
+199550,Palestine Regional Medical Center,1326113762,75801,2900 S Loop 256,Palestine,Anderson,TX,False,,5.0
+200688,Paris Regional Medical Center,1063411767,75460,865 Deshong Drive,Paris,Lamar,TX,True,Acute Care Hospitals,5.0
+200724,Parkview Regional Hospital,1497708929,76667,600 South Bonham,Mexia,Limestone,TX,True,Acute Care Hospitals,5.0
+201322,Person Memorial Hospital Inc,1881977593,27573,615 Ridge Road,Roxboro,Person,NC,True,Acute Care Hospitals,5.0
+201738,Portage Health System,1245667229,49930,500 Campus Drive,Hancock,Houghton,MI,True,Acute Care Hospitals,5.0
+201758,Providence Hospital,1003811290,29204,2435 Forest Drive,Columbia,Richland,SC,True,Acute Care Hospitals,5.0
+203300,Raleigh General Hospital,1629015698,25801,1710 Harper Road,Beckley,Raleigh,WV,True,Acute Care Hospitals,5.0
+204264,Riverview Regional Medical Center,1922319037,37030,158 Hospital Drive,Carthage,Smith,TN,True,Critical Access Hospitals,5.0
+205288,Rutherford Hospital  Inc.,1245321181,28139,288 South Ridgecrest Avenue,Rutherfordton,Rutherford,NC,True,Acute Care Hospitals,5.0
+205855,Sage West Health Care,1245337286,82501,2100 West Sunset Drive,Riverton,Fremont,WY,True,Acute Care Hospitals,5.0
+206671,Sagewest Health Care Lander,1396842308,82520,1320 Bishop Randall Dr,Lander,Fremont,WY,True,,5.0
+207487,Saline Memorial Hospital,1235111071,72015,1 Medical Park Drive,Benton,Saline,AR,True,Acute Care Hospitals,5.0
+207592,Scott Memorial Hospital,,47170,1415 North Gardner Street,Scottsburg,Scott,IN,True,Critical Access Hospitals,5.0
+208114,So Tenn Reg Med Ctr Of Pulaski,1841388519,38478,1265 East College Street,Pulaski,Giles,TN,True,Acute Care Hospitals,5.0
+208850,Southwestern Medical Center,1952359986,73505,5602 Sw Lee Boulevard,Lawton,Comanche,OK,True,Acute Care Hospitals,5.0
+208886,Sovah Health - Danville,1154419737,24541,142 South Main Street,Danville,Danville,VA,True,Acute Care Hospitals,5.0
+209744,Spring View Hospital,1780746420,40033,320 Loretto Road,Lebanon,Marion,KY,True,Acute Care Hospitals,5.0
+210759,Starr Regional Medical Center,1134480155,37331,886 Highway 411 N,Etowah,McMinn,TN,True,,5.0
+212044,St. Francis Hospital  Inc.,1033228168,31904,2122 Manchester Expressway,Columbus,Muscogee,GA,True,Acute Care Hospitals,5.0
+212122,St Joseph Regional Medical Center,1225090954,83501,415 Sixth Street,Lewiston,Nez Perce,ID,True,Acute Care Hospitals,5.0
+212195,St. Marys Regional Medical Center,1033160049,72801,1808 West Main Street,Russellville,Pope,AR,True,Acute Care Hospitals,5.0
+212272,Sumner Regional Medical Center,1447571658,37066,555 Hartsville Pike,Gallatin,Sumner,TN,True,Acute Care Hospitals,5.0
+213213,Swain County Hospital,,28713,45 Plateau Street,Bryson City,Swain,NC,True,Critical Access Hospitals,5.0
+217182,The Bradley Center,,31901,2000 16th Ave,Columbus,Muscogee,GA,False,,5.0
+217260,Trousdale Medical Center,1467763458,37074,500 Church Street,Hartsville,Trousdale,TN,True,Critical Access Hospitals,5.0
+218104,Twin County Regional Hospital,1114292141,24333,200 Hospital Drive,Galax,Galax,VA,True,Acute Care Hospitals,5.0
+219278,UP Health System - Marquette,1568727048,49855,580 West College Avenue,Marquette,Marquette,MI,True,Acute Care Hospitals,5.0
+220047,Valley View Medical Center,1811086994,86426,5330 South Highway 95,Fort Mohave,Mohave,AZ,True,Acute Care Hospitals,5.0
+221190,Vaughan Regional Medical Center,1871655993,36701,1015 Medical Center Parkway,Selma,Dallas,AL,True,Acute Care Hospitals,5.0
+222320,Watertown Regional Medical Center,1992776041,53098,125 Hospital Drive,Watertown,Dodge,WI,True,Acute Care Hospitals,5.0
+223271,Western Plains Medical Complex,1336231232,67801,3001 Avenue 'a',Dodge City,Ford,KS,True,Acute Care Hospitals,5.0
+223937,Willamette Valley Medical Center,1346269982,97128,2700 Se Stratus Avenue,Mcminnville,Yamhill,OR,True,Acute Care Hospitals,5.0
+224021,Wilson Medical Center,1215359922,27893,"1705 Tarboro Street, Sw",Wilson,Wilson,NC,True,Acute Care Hospitals,5.0
+226353,Wythe County Community Hospital,1184706152,24382,600 West Ridge Road,Wytheville,Wythe,VA,True,Acute Care Hospitals,5.0

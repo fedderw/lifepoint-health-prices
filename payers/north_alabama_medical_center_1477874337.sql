@@ -1,0 +1,11 @@
+INSERT IGNORE INTO payers (`payer`)
+VALUES
+("BLUE CROSS BLUE SHIELD OF ALABAMA - (Indemnity)"),
+("BLUE CROSS BLUE SHIELD OF ALABAMA - (PPO)"),
+("BLUECROSS BLUESHIELD OF TENNESSEE - (PPO)"),
+("BCBST - (PAYING FOR STATE OF TENNESSEE) - (PPO)"),
+("BLUE CROSS AND BLUE SHIELD OF TENNESSEE - (PPO)"),
+("Discounted Cash Charge"),
+("Gross Charge"),
+("De-identifiedMax"),
+("De-identifiedMin");
