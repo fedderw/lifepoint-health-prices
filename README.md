@@ -11,9 +11,8 @@ This is our second pass at a Hospital Price Transparency dataset. To recap, on J
 There are three tables participants are most likely to want to modify, hospitals, procedures, and prices.
 
 ## `Hospitals` table
-The hospitals table is unchanged from version 1, and the data from that first version has been imported in advance. As part of the data gathered in the first version of the bounty was the chargematster URL, you can use this data to assist you in populating this second database.
 
-* `npi_number`, the primary key
+* `npi_number`, the primary key `[PK]`
 * `name`
 * `url`
 * `street_address`
@@ -23,7 +22,6 @@ The hospitals table is unchanged from version 1, and the data from that first ve
 * `publish_date`
 
 ## `Procedures` table
-The one change here is that  npi_number is now part of the primary key, making procedures hospital specific. This used to be the cpt_hcpcs table.
 
 * `code`, a CPT or HCPCS code `[PK]`
 * `npi_number`, the 10 digit national provider identifier for the corresponding hospital and name is the name is the name of the hospital. `[PK]` `[FK]`
@@ -35,7 +33,7 @@ The primary key is (code, npi_number).
 Three fields were added to the prices table IP_OP, caveat, and mode
 
 * `code` , the CPT or HCPCS code from the procedures table (foreign constraint) `[PK]` `[FK]`
-* `npi_number` (`PK`,`FK`), the npi number from the hospitals table (foreign constraint) `[PK]` `[FK]`
+* `npi_number`, the npi number from the hospitals table (foreign constraint) `[PK]` `[FK]`
 * `payer`, the insurer or insurer/plan that pays the negotiated rate `[PK]`
 * `IP_OP`, takes on values “INPATIENT”, “OUTPATIENT”, or “UNSPECIFIED” `[PK]`
 * `caveat`, the type of insurance plan, such as “HMO”, “PPO”, or “INDEMNITY” `[PK]`
@@ -44,3 +42,40 @@ Three fields were added to the prices table IP_OP, caveat, and mode
 
 ## Additional tables
 There are four more tables that participants in the bounty shouldn’t have to modify, these are `payers`, `modes`, `caveats`, and `IP_OPs`. The are all tables with one single column.
+
+IP_OP|
+:---|
+INPATIENT|
+OUTPATIENT|
+UNSPECIFIED|
+
+mode|
+:---|
+EXPECTED|
+GROSS|
+MAXIMUM|
+MINIMUM|
+NONE|
+NULL|
+
+caveat|
+:---|
+BAV|
+EMPLOYEE|
+EPO|
+HMO|
+HMO-MR|
+HMO/PPO|
+INDEMNITY|
+MEDICAID|
+MEDICARE|
+MISC|
+NONE|
+OUT OF STATE|
+POS|
+PPO|
+PREFERRED|
+PREFERRED HMO|
+PREFERRED HMO/POS|
+PREFERRED PLUS HMO|
+SELECT|
